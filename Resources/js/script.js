@@ -64,19 +64,14 @@ $(document).ready(function() {
         }
     }
 
-    
     // Ingreso los valores para desencriptar
     function ingresoDesencriptar() {
         
         
         if (input.value.length > 0) {
-            //Aqui separamos cada uno de los carateres dentro del "String" y lo almacenamos dentro del "Array"
-            // for (const itera of input.value) {
-            //     palabra.push(itera);
-            // }
-            let palabra = input.value; // ESTE ES EL VECTOR PARA LOS VALORES A DESENCRIPTAR
+            // Variable para almacenar el valor de la entrada
+            let palabra = input.value; 
             palabra = desencriptar(palabra);
-            // palabra = palabra.join("");
             input.value = "";
             respuesta.value = palabra;
         }
