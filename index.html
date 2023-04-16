@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Encriptador de Texto</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="Resources/css/prueba.css">
+    <!-- Scripts -->
+    <script src="Resources/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <!-- "row" hace que los elementos dentro se organicen como cajas flexibles y puedan ser manipuladas en como deben ser ordenadas y distribuidas -->
+    <div class="row">
+        <!-- Primer segmento: aqui va el primer input con los botones de "Encriptar" y "Desencriptar" -->
+        <div class="col-3"></div>
+        <div class="col-6 mt-5 card">
+            <!-- Formulario -->
+            <form id="form_encrip">
+                <div class="form-group d-flex">
+                    <input type="text" name="encriptado" id="encriptado" class="form-control" placeholder="Ingresa tu mensaje ..." >
+                </div>
+                <div class="form-group d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary btn-lg mr-2" id="Encriptar">
+                        <span>Encriptar</span>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg" id="Desencriptar">
+                        <span>Desencriptar</span>
+                    </button>
+                </div>
+            </form> 
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row">
+        <!-- Segundo segmento: aqui va el textarea con el boton de "Copiar" -->
+        <div class="col-3"></div>
+        <div class="col-6 mt-5 card">
+            <!-- Formulario -->
+            <div id="form_copy">
+                <div class="form-group d-flex">
+                    <textarea name="respuesta" id="respuesta" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-lg" id="btnCopy">
+                        <span>Copiar</span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+        <div class="col-3"></div>
+    </div>
+    
+    
+    <script src="Resources/js/script.js"></script>
+</body>
+</html>
